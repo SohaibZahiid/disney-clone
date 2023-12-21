@@ -1,4 +1,4 @@
-import { Genre, Genres } from "@/types/Types";
+import { Genres } from "@/types/Types";
 import {
   DropdownMenu,
   DropdownMenuContent,

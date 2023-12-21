@@ -6,7 +6,7 @@ import { useParams, useSearchParams } from "react-router-dom";
 
 function Genre() {
   const { id } = useParams();
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [movies, setMovies] = useState<Movie[]>([]);
 
   console.log(searchParams.get("genre"));
