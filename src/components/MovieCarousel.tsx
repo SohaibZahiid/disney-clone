@@ -10,7 +10,7 @@ type Props = {
 
 function MovieCarousel({ title, movies }: Props) {
   return (
-    <div className="z-50">
+    <div className="z-50 mt-10 dark:mt-0">
       <h2 className="text-xl font-bold mx-10">{title}</h2>
       <ScrollArea className="whitespace-nowrap rounded-md border mx-5 lg:mx-10 my-5">
         <div className={cn("flex w-max space-x-4 p-4")}>

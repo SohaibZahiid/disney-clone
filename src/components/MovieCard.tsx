@@ -3,8 +3,8 @@ import { Movie } from "@/types/Types";
 function MovieCard({ movie }: { movie: Movie }) {
   return (
     <figure className="relative mb-6 cursor-pointer flex-shrink-0 hover:scale-[1.030] transition-transform duration-100">
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/10 to-gray-300 dark:to-[#020817]/80 z-10" />
-      <figcaption className="absolute z-20 bottom-5 left-5">
+      <div className="absolute inset-0 dark:bg-gradient-to-b from-gray-200/0 via-gray-900/10 to-gray-300 dark:to-[#020817]/80 z-10" />
+      <figcaption className="absolute z-20 bottom-5 left-5 text-white">
         {movie.title}
       </figcaption>
       <img

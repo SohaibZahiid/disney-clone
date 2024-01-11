@@ -26,15 +26,17 @@ function CarouselBanner({ movies }: { movies: Movie[] }) {
               xl:pt-52 lg:mt-40 bg-transparent h-full w-full bg-gradient-to-r
             from-gray-900/90 to-transparent z-20 p-10 space-y-5"
             >
-              <h2 className="text-5xl font-bold max-w-xl z-50">
+              <h2 className="text-5xl font-bold max-w-xl z-50 text-white">
                 {movie.title}
               </h2>
-              <p className="max-w-xl line-clamp-3">{movie.overview}</p>
+              <p className="max-w-xl line-clamp-3 text-white">
+                {movie.overview}
+              </p>
             </div>
           </div>
         ))}
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/25 to-gray-300 dark:to-[#020817]"></div>
+      <div className="dark:absolute inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/25 to-gray-300 dark:to-[#020817]"></div>
     </div>
   );
 }

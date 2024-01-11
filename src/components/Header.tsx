@@ -24,12 +24,12 @@ function Header() {
       <nav className="flex justify-between items-center">
         <Link to={"/"}>
           <img
-            className="w-30 cursor-pointer invert dark:invert-0"
+            className="w-24 md:w-32 cursor-pointer invert-0"
             src={logo}
             alt="logo"
           />
         </Link>
-        <div className="flex gap-2">
+        <div className="gap-2 flex">
           <GenreDropdown />
           <Input
             type="text"
@@ -40,6 +40,22 @@ function Header() {
           />
           <ModeToggle />
         </div>
+        {/* <div className="block sm:hidden">
+          <svg
+            className="w-6 h-6 text-white cursor-pointer"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </div> */}
       </nav>
     </header>
   );
